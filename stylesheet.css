@@ -1,0 +1,134 @@
+
+body{
+    background-color: #0D1323;
+}
+
+main{
+display: grid;
+width:80vw;
+margin:10vw;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: 35vh 35vh;
+grid-template-areas: "user work play study"
+                      "user exercise social selfcare" ;
+row-gap:2rem;
+column-gap: 2rem;
+
+}
+article.userInfo{
+
+display: inline-grid;
+grid-template-columns: 1fr;
+grid-template-rows: 2fr 1fr;
+grid-area:user;
+color:white;
+background-color: #1D204B;
+border-radius: 10px;
+
+}
+.userInfo p{
+background-color: #5746EA;
+border-radius: 10px;
+border:#5746EA solid medium;
+color:#6C71AB;
+padding: 15px;
+margin:0;
+
+}
+
+.userInfo ul{
+    list-style-type: none;
+    color:#6C71AB;
+}
+li{
+    margin:5px;
+}
+
+.userInfo img{
+     width: 50px;
+     height: 50px;
+     border-radius:50px;
+     border:white solid medium;
+     float:left;
+     margin:10px;
+
+}
+span.userName{
+
+    font-size:1.5em;
+    color:white;
+}
+li:nth-of-type(2){
+    color:white;
+}
+
+img.icon{
+    float:right;
+}
+b.todo{
+    color:white;
+}
+span.hours{
+    font-size:3em;
+    color:white;
+}
+article.Work{
+    background-color:#FF8B64;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    border-radius: 10px;
+}
+p.day{
+    color:#6C71AB;
+    background-color: #1D204B;
+    height: 95%;
+    border-radius: 10px;
+    padding:15px;
+    margin: 0;
+    z-index: 5;
+    position: relative;
+    top:-20px
+}
+
+article.Play{
+
+    background-color: #56C2E6;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    border-radius: 10px;
+}
+article.Study{
+    background-color: #FF5E7D;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    border-radius: 10px;
+}
+article.Exercise{
+    background-color:#4BCF83;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    border-radius: 10px;
+
+}
+article.Social{
+    background-color: #7235D1;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    border-radius: 8px;
+}
+article.SelfCare{
+    background-color: #F1C75B;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    border-radius: 8px;
+}
+img.iconix{
+    float:right;
+    height:40px;
+}
